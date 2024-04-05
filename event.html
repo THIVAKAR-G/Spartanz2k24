@@ -23,7 +23,7 @@
             <img src="images.png" alt="logo" class="logo"/>
         </div>
         <div>
-            <h1 class="main-heading"> Department of Computer Science and Engineering - <span class="hecura">SPARTANZ 2K24</span></h1>
+            <h1 class="main-heading"> Department of Computer Science and Engineering - <span class="hecura">SPARTANZ</span></h1>
         </div>
         </div>
     <div class="tab-register-container">
@@ -35,6 +35,10 @@
             </li>
             <li class="nav-item nav-space" id="nav-item2">
                 <button class="tab-btn" onclick="nonTechnicalTab()" id="btn2">Non-Technical </button>
+            </li>
+            <li class="nav-item nav-space" id="nav-item3">
+                <button class="tab-btn" onclick="flagshipTab()" id="btn3">Games</button>
+            </li>
         </ul>
     </nav>
         <ul class="tabs-container">
@@ -49,6 +53,7 @@
             </li>
             </ul>
         </div>
+
         <div class="reg-item">
             <a href="https://shorturl.at/pqOZ5"><button class="reg-btn">Register Now</button></a>
             </div>
@@ -57,7 +62,7 @@
      <ul class="event-container" id="technicalEvent" >
         <a href="ui.html">
         <li class="event">
-            <img src="web designing logo.jpg" alt="img" class="img"/>
+            <img src="web designing 2.jpg" alt="img" class="img"/>
             <div class="content">
                 <p>Web Designing</p>
             </div>
@@ -71,9 +76,10 @@
             </div>
             </li>
         </a>
+
         <a href="Hugs.html">
         <li class="event">
-            <img src="hugsforbugs.jpg" alt="img" class="img"/>
+            <img src="code debugging 2.jpg" alt="img" class="img"/>
             <div class="content">
                 <p>Hugs For Bugs</p>
             </div>
@@ -87,8 +93,27 @@
             </div>
         </li>
 </a>
+       <!-- <a href="./CSE/paper presentation/paperpresentation.html">
+        <li class="event">
+            <img src="./images/paperpresntations.jpg" alt="img" class="img imgEpo"/>
+            <div class="content">
+                <p>Paper Presentation</p>
+            </div>
+        </li>
+       </a>
+        
+       <a href="./CSE/project presentation/projectpresentation.html">
+         <li class="event">
+            <img src="./images/projectexpo.png" alt="img" class="img imgEpo"/>
+            <div class="content">
+                <p>Project Expo</p>
+            </div>
+        </li>
+       </a> -->
         </ul>
+
         <ul class="event-container" id="nonTechnicalEvent" >
+
             <a href="Action.html">
                 <li class="event">
                 <img src="action.jpg" alt="img" class="img"/>
@@ -97,6 +122,7 @@
                 </div>
             </li>
             </a>
+            
             <a href="film.html">
                 <li class="event">
                 <img src="short.jpg" alt="img" class="img imgEpo"/>
@@ -105,7 +131,19 @@
                 </div>
             </li>
             </a>
-             <a href="VR.html">
+            <a href="Hindusthan.html">
+                <li class="event">
+                <img src="hindusthan.jpg" alt="img" class="img imgEpo"/>
+                <div class="content">
+                    <p> Hindusthan Got Talent</p>
+                </div>
+            </li>
+            </a>
+            </ul>
+
+            <ul class="event-container" id="flagshipEvent" >
+
+                <a href="VR.html">
                     <li class="event">
                     <img src="Virtual-Reality-Gaming.jpg" alt="img" class="img imgEpo"/>
                     <div class="content">
@@ -113,15 +151,25 @@
                     </div>
                 </li>
                 </a>
-             <a href="Hindusthan.html">
+
+                <!-- <a href="Hindusthan.html">
                     <li class="event">
                     <img src="hindusthan.jpg" alt="img" class="img imgEpo"/>
                     <div class="content">
                         <p> Hindusthan Got Talent</p>
                     </div>
                 </li>
+                </a> -->
+                
+                <!-- <a href="../flagship/Treasure Hunt/Tresure hunt.html">
+                    <li class="event">
+                    <img src="./images/treasurehunt.jpg" alt="img" class="img imgEpo"/>
+                    <div class="content">
+                        <p>Treasure Hunt</p> -->
+                    </div>
+                </li>
                 </a>
-            </ul>
+                </ul>
         </div>
 </body>
  </div>
@@ -187,6 +235,10 @@ function technicalTab() {
     navItem2.classList.remove("nav-item");
     navItem3.classList.remove("nav-item");
 }
+
+
+
+
 function nonTechnicalTab() {
     technicalEventTabEl.classList.add("d-none");
     nonTechnicalEventTabEl.classList.remove("d-none");
@@ -205,6 +257,25 @@ function nonTechnicalTab() {
     navItem3.classList.remove("nav-item");
 }
 
+
+
+function flagshipTab() {
+    technicalEventTabEl.classList.add("d-none");
+    nonTechnicalEventTabEl.classList.add("d-none");
+    flagshipEventTabEl.classList.remove("d-none");
+
+    technicalBtnEl.classList.remove("selected-button");
+    nonTechnicalBtn.classList.remove("selected-button");
+    flagshipBtnEl.classList.add("selected-button");
+
+    item1.classList.remove("item");
+    item2.classList.remove("item");
+    item3.classList.add("item");
+
+    navItem1.classList.remove("nav-item");
+    navItem2.classList.remove("nav-item");
+    navItem3.classList.add("nav-item");
+}
 </script>
 
 
