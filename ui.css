@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     padding-bottom: 30px;
     margin-bottom: 30px;
   
@@ -79,7 +79,7 @@ button>span,button>img{
 }
 
 p,li{
-    color: white;
+    color: wheat;
     margin-left: 10vw ;
     margin-right: 10vw;
     font-size: 17px;
